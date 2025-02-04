@@ -1,0 +1,1359 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="E:\MiraLaundry\styles\style.css">
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	<body>
+
+		<div class="modal fade" id="pageLoadModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1>Pick a City</h1>
+						<p>To find awesome offers around you</p>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="city-with-icon center p-3">
+								<img src="E:\MiraLaundry\icons\bangalore 1.png">
+								<p>Bangalore</p>
+							</div>
+							<div class="city-with-icon center p-3">
+								<img src="E:\MiraLaundry\icons\bangalore 1.png">
+								<p>Chennai</p>
+							</div>
+							<div class="city-with-icon center p-3">
+								<img src="E:\MiraLaundry\icons\bangalore 1.png">
+								<p>New Delhi</p>
+							</div>
+							<div class="city-with-icon center p-3">
+								<img src="E:\MiraLaundry\icons\bangalore 1.png">
+								<p>Ghaziabad</p>
+							</div>
+							<div class="city-with-icon center p-3">
+								<img src="E:\MiraLaundry\icons\bangalore 1.png">
+								<p>Gurgaon</p>
+							</div>
+							<div class="city-with-iconcenter p-3">
+								<img src="E:\MiraLaundry\icons\bangalore 1.png">
+								<p>Hyderabad</p>
+							</div>
+							<div class="city-with-icon center p-3">
+								<img src="E:\MiraLaundry\icons\bangalore 1.png">
+								<p>Indore</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="city-with-icon center p-3">
+								<img src="E:\MiraLaundry\icons\bangalore 1.png">
+								<p>Mumbai</p>
+							</div>
+							<div class="city-with-icon center p-3">
+								<img src="E:\MiraLaundry\icons\bangalore 1.png">
+								<p>Nvi Mumbai</p>
+							</div>
+							<div class="city-with-icon center p-3">
+								<img src="E:\MiraLaundry\icons\bangalore 1.png">
+								<p>Noida</p>
+							</div>
+							<div class="city-with-icon center p-3">
+								<img src="E:\MiraLaundry\icons\bangalore 1.png">
+								<p>Pune</p>
+							</div>
+							<div class="city-with-icon center p-3">
+								<img src="E:\MiraLaundry\icons\bangalore 1.png">
+								<p>Raipur</p>
+							</div>
+							<div class="city-with-icon center p-3">
+								<img src="E:\MiraLaundry\icons\bangalore 1.png">
+								<p>Surat</p>
+							</div>
+							<div class="city-with-icon center p-3">
+								<img src="E:\MiraLaundry\icons\bangalore 1.png">
+								<p>Thane</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<header>
+			<div class="container-fluid">
+				<div class="row d-flex align-items-center">
+					<div class="col-md-12 col-lg-5 header-left">
+						<ul class="d-flex align-items-center">
+							<li>
+								<a class="logo" href="index.html">MERA LAUNDRY</a>
+							</li>
+							<li>
+								<div class="location d-flex align-items-center">
+									<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.8304 1.11523C6.23672 1.11523 3.31299 4.03897 3.31299 7.63264C3.31299 12.1495 9.83681 19.8652 9.83681 19.8652C9.83681 19.8652 16.3478 11.9274 16.3478 7.63264C16.3478 4.03897 13.4242 1.11523 9.8304 1.11523ZM11.7968 9.54095C11.2546 10.0831 10.5426 10.3542 9.8304 10.3542C9.11835 10.3542 8.40607 10.0831 7.86407 9.54095C6.77975 8.45673 6.77975 6.69251 7.86407 5.60818C8.38913 5.0829 9.08756 4.79359 9.8304 4.79359C10.5732 4.79359 11.2716 5.08302 11.7968 5.60818C12.8812 6.69251 12.8812 8.45673 11.7968 9.54095Z" fill="#E68911"/>
+									</svg>
+									<span class="selected-city">New Delhi</span>
+								</div>
+							</li>
+
+
+					</div>
+					<div class="col-md-7">
+						<ul class="header-right-links d-flex float-md-end align-items-center">
+							<li>
+								<a href="#" data-toggle="modal" data-target="#login" data-t="0" class="submit cls-type">Login</a>
+							</li>
+							<li>
+								<a href="#" data-toggle="modal" data-target="#query" data-t="0" class="submit cls-type bp">Join Us</a>
+							</li>
+
+							<li>
+								<a href="" class="btn book-btn">Book Now</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</header>
+
+		<div class="mobile-menu box-shadow">
+			<div class="mobile-navbar fixed_nav">
+				<ul class="d-flex align-items-end justify-content-between text-center">
+					<li>
+						<a href="/index.html" class="text-center xsm">
+							<img src="E:\MiraLaundry\media\Home.png" alt="Home icon">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="/index.html" class="text-center xsm">
+							<img src="E:\MiraLaundry\media\Sent.png" alt="box icon">
+							My Orders
+						</a>
+					</li>
+					<li>
+						<a href="/index.html" class="text-center xsm book-now-text">
+							<p class="book-now-icon">
+								<span class="plus-icon-circle">+ </span></p>
+							<img src="" alt=""> Book Now
+						</a>
+					</li>
+					<li>
+						<a href="/index.html" class="text-center xsm">
+							<img src="E:\MiraLaundry\media\Respect.png" alt="Joint Hands icon">
+							Join us
+						</a>
+					</li>
+					<li>
+						<a href="/index.html" class="text-center xsm">
+							<img src="E:\MiraLaundry\media\Help.png" alt="chat bubble icon">
+							Support
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- First Section -->
+		<div class="main">
+			<div class="container-fluid banner mb-4">
+				<div class="row">
+					<div class="col-12">
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Second section with three banners -->
+
+			<div class="container-fluid three-banner mb-100">
+				<div class="row d-flex">
+					<div class="col-md-4 banner-1 me-4">
+					</div>
+					<div class="col-md-4 banner-2 me-4">
+
+					</div>
+					<div class="col-md-4 banner-3">
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Our Services -->
+
+			<div class="container-fluid services mb-100">
+				<div class="row">
+					<h2 class="title">Our Services</h2>
+				</div>
+				<div class="row d-flex justify-content-between">
+					<div class="service-col p-3 mb-4">
+						<img src="E:\MiraLaundry\media\washing-clothes 1.png" alt="Launry Service">
+						<h5 class="service-title">Wash & Fold</h5>
+						<p class="service-price xsm">Starts @ ₹69/kg</p>
+					</div>
+					<div class="service-col p-3 mb-4">
+						<img src="E:\MiraLaundry\media\towels-1.png" alt="Launry Service">
+						<h5 class="service-title">Wash & Iron</h5>
+						<p class="service-price xsm">Starts @ ₹99/kg</p>
+					</div>
+					<div class="service-col p-3 mb-4">
+						<img src="E:\MiraLaundry\media\Group-1.png" alt="Launry Service">
+						<h5 class="service-title">Dry Cleaning</h5>
+						<p class="service-price xsm">Starts @ ₹59/pc</p>
+					</div>
+					<div class="service-col p-3 mb-4">
+						<img src="E:\MiraLaundry\media\shoe-1.png" alt="Launry Service">
+						<h5 class="service-title">Shoe cleaning</h5>
+						<p class="service-price xsm">Starts @ ₹299/pair</p>
+					</div>
+					<div class="service-col p-3 mb-4">
+						<img src="E:\MiraLaundry\media\hoodie-1.png" alt="Launry Service">
+						<h5 class="service-title">Jackets</h5>
+						<p class="service-price xsm">Starts @ ₹99/pc</p>
+					</div>
+
+					<div class="service-col p-3 margin-bottom">
+						<img src="E:\MiraLaundry\media\school-bag.png" alt="Launry Service">
+						<h5 class="service-title">Bag</h5>
+						<p class="service-price xsm">Starts @ ₹99/pc</p>
+					</div>
+
+					<div class="service-col p-3 margin-bottom">
+						<img src="E:\MiraLaundry\media\sofa.png" alt="Launry Service">
+						<h5 class="service-title">Blanket/ Sofa/ Carpet</h5>
+						<p class="service-price xsm">Starts @ ₹149</p>
+					</div>
+
+					<div class="service-col p-3 margin-bottom">
+						<img src="E:\MiraLaundry\media\express-1.png" alt="Launry Service">
+						<h5 class="service-title">Express Laundry</h5>
+						<p class="service-price xsm">Starts @ ₹199/kg - 24 Hrs</p>
+					</div>
+
+					<div class="service-col p-3">
+						<img src="E:\MiraLaundry\media\Group-2.png" alt="Launry Service">
+						<h5 class="service-title">Steam Ironing (Regular Cloths)</h5>
+						<p class="service-price xsm">Starts @ ₹9/pc</p>
+					</div>
+
+					<div class="service-col p-3">
+						<img src="E:\MiraLaundry\media\Group-2.png" alt="Launry Service">
+						<h5 class="service-title">Steam Ironing (Large Cloths)</h5>
+						<p class="service-price xsm">Starts @ ₹39/pc</p>
+					</div>
+
+				</div>
+				<div class="mobile-btn d-flex justify-content-center">
+					<a href="#" class="schedule-btn orange-btn">Schedule Pickup</a>
+				</div>
+			</div>
+
+			<!-- How it Works -->
+
+			<div class="container-fluid how-it-works mb-100">
+				<div class="row">
+					<h2 class="title">How it Works</h2>
+				</div>
+
+				<div class="container-fluid">
+
+					<!-- Tabs -->
+
+					<ul class="nav nav-tabs mb-40 justify-content-center" id="myTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<a class="nav-link rounded-pill active sm" id="pickup-tab" data-bs-toggle="tab" href="#pickup" role="tab" aria-controls="pickup" aria-selected="true">Pickup</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link rounded-pill sm" id="process-tab" data-bs-toggle="tab" href="#process" role="tab" aria-controls="process" aria-selected="false">Process</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link rounded-pill sm" id="drop-off-tab" data-bs-toggle="tab" href="#drop-off" role="tab" aria-controls="drop-off" aria-selected="false">Drop off</a>
+						</li>
+					</ul>
+
+					<!-- Tabs' Content  -->
+
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="pickup" role="tabpanel" aria-labelledby="pickup-tab">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-6 left-col">
+									</div>
+									<div class="col-md-6 right-col">
+										<div class="container-fluid content">
+											<div class="row mb-60">
+												<div class="col-1 icon">
+													<div id="icon">
+														<span id="circle" class="d-flex align-items-center justify-content-center">
+															<img src="E:\MiraLaundry\media\Select.png" alt="Select Service icon">
+														</span>
+													</div>
+												</div>
+												<div class="col-11">
+													<h3 class="icon-title">Select Service</h3>
+													<p class="des">Choose the service you need—laundry, dry cleaning, household or sofa cleaning.</p>
+												</div>
+											</div>
+											<div class="row mb-60">
+												<div class="col-1 icon">
+													<div id="icon">
+														<span id="circle" class="d-flex align-items-center justify-content-center">
+															<img src="E:\MiraLaundry\media\Schedule.png" alt="Schedule icon">
+														</span>
+													</div>
+												</div>
+												<div class="col-11">
+													<h3 class="icon-title">Schedule a Pickup</h3>
+													<p class="des">Pick a convenient date and time for your clothes to be picked up from your doorstep.</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-1 icon">
+													<div id="icon">
+														<span id="circle" class="d-flex align-items-center justify-content-center">
+															<img src="E:\MiraLaundry\media\Food.png" alt="Hand icon">
+														</span>
+													</div>
+												</div>
+												<div class="col-11">
+													<h3 class="icon-title">Hand Over Your Laundry</h3>
+													<p class="des">Our professional rider will arrive at your location to collect your items.</p>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="process" role="process" aria-labelledby="process-tab">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-6 left-col">
+									</div>
+									<div class="col-md-6 right-col">
+										<div class="container-fluid content">
+											<div class="row mb-60">
+												<div class="col-1 icon">
+													<div id="icon">
+														<span id="circle">
+															<img src="E:\MiraLaundry\media\Select.png" alt="Select Service icon">
+														</span>
+													</div>
+												</div>
+												<div class="col-11">
+													<h3 class="icon-title">Select Service</h3>
+													<p class="des">Choose the service you need—laundry, dry cleaning, household or sofa cleaning.</p>
+												</div>
+											</div>
+											<div class="row mb-60">
+												<div class="col-1 icon">
+													<div id="icon">
+														<span id="circle">
+															<img src="E:\MiraLaundry\media\Schedule.png" alt="Schedule icon">
+														</span>
+													</div>
+												</div>
+												<div class="col-11">
+													<h3 class="icon-title">Schedule a Pickup</h3>
+													<p class="des">Pick a convenient date and time for your clothes to be picked up from your doorstep.</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-1 icon">
+													<div id="icon">
+														<span id="circle">
+															<img src="E:\MiraLaundry\media\Food.png" alt="Hand icon">
+														</span>
+													</div>
+												</div>
+												<div class="col-11">
+													<h3 class="icon-title">Hand Over Your Laundry</h3>
+													<p class="des">Our professional rider will arrive at your location to collect your items.</p>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="drop-off" role="tabpanel" aria-labelledby="drop-off-tab">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-6 left-col">
+									</div>
+									<div class="col-md-6 right-col">
+										<div class="container-fluid content">
+											<div class="row mb-60">
+												<div class="col-1 icon">
+													<div id="icon">
+														<span id="circle">
+															<img src="E:\MiraLaundry\media\Select.png" alt="Select Service icon">
+														</span>
+													</div>
+												</div>
+												<div class="col-11">
+													<h3 class="icon-title sm">Select Service</h3>
+													<p class="des sm">Choose the service you need—laundry, dry cleaning, household or sofa cleaning.</p>
+												</div>
+											</div>
+											<div class="row mb-60">
+												<div class="col-1 icon">
+													<div id="icon">
+														<span id="circle">
+															<img src="E:\MiraLaundry\media\Schedule.png" alt="Schedule icon">
+														</span>
+													</div>
+												</div>
+												<div class="col-11">
+													<h3 class="icon-title sm">Schedule a Pickup</h3>
+													<p class="des sm">Pick a convenient date and time for your clothes to be picked up from your doorstep.</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-1 icon">
+													<div id="icon">
+														<span id="circle">
+															<img src="E:\MiraLaundry\media\Food.png" alt="Hand icon">
+														</span>
+													</div>
+												</div>
+												<div class="col-11">
+													<h3 class="icon-title sm">Hand Over Your Laundry</h3>
+													<p class="des sm">Our professional rider will arrive at your location to collect your items.</p>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="coupons container mb-100 desktop">
+				<div class="row">
+					<h2 class="title">Save Big with Our Coupons</h2>
+				</div>
+				<div class="row">
+						<div class="col-4 blue-bg coupon-info">
+							<div class="coupon-top">
+								<h4 class="off">20% OFF</h4>
+								<p class="coupon-des xsm">20% instant discount upto | Valid for new users only</p>
+							</div>
+							<div class="coupon-bottom d-flex justify-content-between align-items-center">
+								<div class="coupon-code">
+									<p class="xsm d-flex justify-content-center align-items-center"><img src="E:\MiraLaundry\media\Coupon.png">Use Code</p>
+								</div>
+								<div class="copy-code">
+									<p class="sm"><button onclick="copyText(this)" class="copy-code d-flex justify-content-center align-items-center"><img src="E:\MiraLaundry\media\Copy.png"> NEW20</button></p>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="col-4 orange-bg coupon-info">
+							<div class="coupon-top">
+								<h4 class="off">20% OFF</h4>
+								<p class="coupon-des xsm">20% instant discount upto | Valid for new users only</p>
+							</div>
+							<div class="coupon-bottom d-flex justify-content-between align-items-center">
+								<div class="coupon-code">
+									<p class="xsm d-flex justify-content-center align-items-center"><img src="E:\MiraLaundry\media\Coupon.png">Use Code</p>
+								</div>
+								<div class="copy-code">
+									<p class="sm"><button onclick="copyText(this)" class="copy-code d-flex justify-content-center align-items-center"><img src="E:\MiraLaundry\media\Copy.png"> NEW20</button></p>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="col-4 blue-bg coupon-info">
+							<div class="coupon-top">
+								<h4 class="off">20% OFF</h4>
+								<p class="coupon-des xsm">20% instant discount upto | Valid for new users only</p>
+							</div>
+							<div class="coupon-bottom d-flex justify-content-between align-items-center">
+								<div class="coupon-code">
+									<p class="xsm d-flex justify-content-center align-items-center"><img src="E:\MiraLaundry\media\Coupon.png">Use Code</p>
+								</div>
+								<div class="copy-code">
+									<p class="sm"><button onclick="copyText(this)" class="copy-code d-flex justify-content-center align-items-center"><img src="E:\MiraLaundry\media\Copy.png"> NEW20</button></p>
+								</div>
+
+							</div>
+						</div>
+				</div>
+			</div>
+
+			<!-- Mobile Slider-->
+			<div class="container mb-100 mobile-coupon mb-100">
+				<div class="row">
+					<h2 class="title">Save Big with Our Coupons</h2>
+				</div>
+				<div style="overflow-x: hidden;">
+					<div class="swiper mySwiper">
+					  <div class="swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="blue-bg coupon-info">
+
+								<div class="coupon-top">
+									<h4 class="off">20% OFF</h4>
+									<p class="coupon-des xsm">20% instant discount upto | Valid for new users only</p>
+								</div>
+
+								<div class="coupon-bottom d-flex justify-content-between align-items-center">
+									<div class="coupon-code">
+										<p class="xsm d-flex justify-content-center align-items-center"><img src="E:\MiraLaundry\media\Coupon.png">Use Code</p>
+									</div>
+
+									<div class="copy-code">
+										<p class="sm"><button onclick="copyText(this)" class="copy-code d-flex justify-content-center align-items-center"><img src="E:\MiraLaundry\media\Copy.png"> NEW20</button></p>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="swiper-slide">
+							<div class="orange-bg coupon-info">
+								<div class="coupon-top">
+									<h4 class="off">20% OFF</h4>
+									<p class="coupon-des xsm">20% instant discount upto | Valid for new users only</p>
+								</div>
+								<div class="coupon-bottom d-flex justify-content-between align-items-center">
+									<div class="coupon-code">
+										<p class="xsm d-flex justify-content-center align-items-center"><img src="E:\MiraLaundry\media\Coupon.png">Use Code</p>
+									</div>
+									<div class="copy-code">
+										<p class="sm"><button onclick="copyText(this)" class="copy-code d-flex justify-content-center align-items-center"><img src="E:\MiraLaundry\media\Copy.png"> NEW20</button></p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="blue-bg coupon-info">
+								<div class="coupon-top">
+									<h4 class="off">20% OFF</h4>
+									<p class="coupon-des xsm">20% instant discount upto | Valid for new users only</p>
+								</div>
+								<div class="coupon-bottom d-flex justify-content-between align-items-center">
+									<div class="coupon-code">
+										<p class="xsm d-flex justify-content-center align-items-center"><img src="E:\MiraLaundry\media\Coupon.png">Use Code</p>
+									</div>
+									<div class="copy-code">
+										<p class="sm"><button onclick="copyText(this)" class="copy-code d-flex justify-content-center align-items-center"><img src="E:\MiraLaundry\media\Copy.png"> NEW20</button></p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					  <!-- end swiper wrapper-->
+
+					  <!-- If we need navigation buttons -->
+					<!--
+					  <div class="swiper-button-prev"></div>
+					  <div class="swiper-button-next"></div>
+					  -->
+					</div>
+					<!-- end swiper -->
+				  </div>
+			</div>
+
+
+			<!-- Schedule Pickup -->
+			<div class="schedule-pickup container-fluid mb-100">
+				<div class="row">
+					<div class="col-md-6 text-col">
+						<h2 class="title">Expert Laundry & Cleaning Services</h2>
+						<p class="sm">Enjoy hassle-free pickup and delivery as our expert team handles your clothes, shoes, blankets, and curtains with care. From premium dry cleaning to professional shoe and blanket cleaning, we ensure impeccable results every time. Trust us for fresh, clean, and ready-to-use items delivered right to your doorstep.</p>
+						<a href="#" class="schedule-btn orange-btn">Schedule Pickup</a>
+					</div>
+					<div class="col-md-6 image-col">
+
+					</div>
+				</div>
+				<div class="free-pick-drop">
+					<h6>FREE PICK & DROP!</h6>
+					<p>Minimum Order Rs. 399.00</p>
+				</div>
+			</div>
+
+			<!-- Achievements -->
+
+			<div class="achievements container-fluid">
+				<div class="row d-flex justify-content-between">
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6 text-center">
+						<div class="icon-with-text">
+							<img src="E:\MiraLaundry\media\Laundry.png" alt="clothes icon">
+							<h5 class="title semibold">50.05 L</h5>
+							<h6 class="sub-title">Clothes Washed</h6>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6 text-center">
+						<div class="icon-with-text">
+							<img src="E:\MiraLaundry\media\order-processed-1.png" alt="clothes icon">
+							<h5 class="title semibold">5.55 L</h5>
+							<h6 class="sub-title">Orders Processed</h6>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6 text-center">
+						<div class="icon-with-text">
+							<img src="E:\MiraLaundry\media\family 1.png" alt="clothes icon">
+							<h5 class="title semibold">3.56 L</h5>
+							<h6 class="sub-title">Satisfied Families</h6>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6 text-center">
+						<div class="icon-with-text">
+							<img src="E:\MiraLaundry\media\market-expansion 1.png" alt="clothes icon">
+							<h5 class="title semibold">89</h5>
+							<h6 class="sub-title">Outlets</h6>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6 text-center">
+						<div class="icon-with-text">
+							<img src="E:\MiraLaundry\media\building 1.png" alt="clothes icon">
+							<h5 class="title semibold">30</h5>
+							<h6 class="sub-title">Cities</h6>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6 text-center">
+						<div class="icon-with-text">
+							<img src="E:\MiraLaundry\media\thumb-up 1.png" alt="clothes icon">
+							<h5 class="title semibold">4.5</h5>
+							<h6 class="sub-title">Rating</h6>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Join Us CTA -->
+
+			<div class="join-cta container-fluid mb-100">
+				<div class="row">
+					<div class="col-8 col-md-7">
+						<h1 class="semibold">Service Professional or Seeking a Franchise?</h1>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+						<a href="#" class="orange-btn">Join us</a>
+					</div>
+					<div class="col-4 col-md-5">
+						<img src="E:\MiraLaundry\media\young-brunette-woman.png" alt="woman pointing at left side">
+					</div>
+				</div>
+			</div>
+
+			<!-- Testimonials -->
+
+			 <div class="client-reviews container-fluid mb-100">
+				<div class="row d-flex align-items-center justify-content-between align-items-center">
+					<div class="col-12 col-md-6 col-lg-6">
+						<h2 class="title">What Our Customers Say</h2>
+					</div>
+					<div class="googleIcon-with-text col-12 col-md-6 col-lg-6 d-flex justify-content-end align-items-center">
+						<div class="google-img">
+							<img src="E:\MiraLaundry\media\Google.png" alt="Google Logo">
+						</div>
+						<div class="rating-text">
+							<h6>Google Rating</h6>
+							<p class="bold">4.5/5 <img src="E:\MiraLaundry\media\stars.png" alt="golden stars"></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slider -->
+
+				<div class="row">
+					<!-- Slider Section -->
+					<div class="container-fluid padding-none">
+
+						<div class="testimonial-slider">
+							<div class="testimonial">
+								<div class="d-flex align-items-center">
+									<img src="E:\MiraLaundry\media\Ellipse1.png" alt="five stars">
+									<div class="person-info">
+										<p class="name semibold">Neha Verma</p>
+										<p class="time">1 month ago</p>
+									</div>
+								</div>
+								<img src="E:\MiraLaundry\media\Frame-80.png" class="five-stars" alt="stars">
+								<p class="review sm">Exceptional service and quality! Mera Laundry made my life so much easier with their easy pickup and delivery. </p>
+							</div>
+
+							<div class="testimonial">
+								<div class="d-flex align-items-center">
+									<img src="E:\MiraLaundry\media\Ellipse1.png" alt="five stars">
+									<div class="person-info">
+										<p class="name semibold">Neha Verma</p>
+										<p class="time">1 month ago</p>
+									</div>
+								</div>
+								<img src="E:\MiraLaundry\media\Frame-80.png" class="five-stars" alt="stars">
+								<p class="review sm">Exceptional service and quality! Mera Laundry made my life so much easier with their easy pickup and delivery. </p>
+							</div>
+
+							<div class="testimonial">
+								<div class="d-flex align-items-center">
+									<img src="E:\MiraLaundry\media\Ellipse1.png" alt="five stars">
+									<div class="person-info">
+										<p class="name semibold">Neha Verma</p>
+										<p class="time">1 month ago</p>
+									</div>
+								</div>
+								<img src="E:\MiraLaundry\media\Frame-80.png" class="five-stars" alt="stars">
+								<p class="review sm">Exceptional service and quality! Mera Laundry made my life so much easier with their easy pickup and delivery. </p>
+							</div>
+
+							<div class="testimonial">
+								<div class="d-flex align-items-center">
+									<img src="E:\MiraLaundry\media\Ellipse1.png" alt="five stars">
+									<div class="person-info">
+										<p class="name semibold">Neha Verma</p>
+										<p class="time">1 month ago</p>
+									</div>
+								</div>
+								<img src="E:\MiraLaundry\media\Frame-80.png" class="five-stars" alt="stars">
+								<p class="review sm">Exceptional service and quality! Mera Laundry made my life so much easier with their easy pickup and delivery. </p>
+							</div>
+
+							<div class="testimonial">
+								<div class="d-flex align-items-center">
+									<img src="E:\MiraLaundry\media\Ellipse1.png" alt="five stars">
+									<div class="person-info">
+										<p class="name semibold">Neha Verma</p>
+										<p class="time">1 month ago</p>
+									</div>
+								</div>
+								<img src="E:\MiraLaundry\media\Frame-80.png" class="five-stars" alt="stars">
+								<p class="review sm">Exceptional service and quality! Mera Laundry made my life so much easier with their easy pickup and delivery. </p>
+							</div>
+
+							<div class="testimonial">
+								<div class="d-flex align-items-center">
+									<img src="E:\MiraLaundry\media\Ellipse1.png" alt="five stars">
+									<div class="person-info">
+										<p class="name semibold">Neha Verma</p>
+										<p class="time">1 month ago</p>
+									</div>
+								</div>
+								<img src="E:\MiraLaundry\media\Frame-80.png" class="five-stars" alt="stars">
+								<p class="review sm">Exceptional service and quality! Mera Laundry made my life so much easier with their easy pickup and delivery. </p>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			 </div>
+
+			<!-- Mera Laundry Benefits -->
+			 <div class="container-fluid mb-100 text-center ben-section">
+				<div class="benefits-sec">
+					<div class="row">
+						<h2 class="title">Mera Laundry Benefits</h2>
+					</div>
+					<div class="row container benefits-inner d-flex justify-content-between">
+						<div class="col-6 col-md-3 col-lg-3 text-center">
+							<div class="icon d-flex justify-content-center">
+								<span id="circle" class="d-flex align-items-center justify-content-center">
+									<img src="E:\MiraLaundry\media\Box.png" alt="box icon">
+								</span>
+							</div>
+							<p class="semibold title sm">Free Pick & Drop</p>
+						</div>
+
+						<div class="col-6 col-md-3 col-lg-3 text-center">
+							<div class="icon d-flex justify-content-center">
+								<span id="circle" class="d-flex align-items-center justify-content-center">
+									<img src="E:\MiraLaundry\media\Bribe.png" alt="box icon">
+								</span>
+							</div>
+							<p class="semibold title sm">Affordable</p>
+						</div>
+
+						<div class="col-6 col-md-3 col-lg-3 text-center">
+							<div class="icon d-flex justify-content-center">
+								<span id="circle" class="d-flex align-items-center justify-content-center">
+									<img src="E:\MiraLaundry\media\Approved.png" alt="box icon">
+								</span>
+							</div>
+							<p class="semibold title sm">Quality Assurance</p>
+						</div>
+
+						<div class="col-6 col-md-3 col-lg-3 text-center">
+							<div class="icon d-flex justify-content-center">
+								<span id="circle" class="d-flex align-items-center justify-content-center">
+									<img src="E:\MiraLaundry\media\Easy.png" alt="hand icon">
+								</span>
+							</div>
+							<p class="semibold title sm">Convenience</p>
+						</div>
+
+					</div>
+				</div>
+				<a href="#" class="orange-btn btn-top-margin">Schedule Pickup</a>
+
+			 </div>
+
+			<!-- FAQs-->
+
+			 <div class="faq-section container-fluid mb-100">
+				<div class="row">
+					<div class="col-md-6 text-col d-flex flex-direction-column justify-content-between">
+						<div>
+							<h2 class="title">Frequently Asked Questions</h2>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when </p>
+						</div>
+						<img src="E:\MiraLaundry\media\shirts-in-rack.png" alt="Shirts in A Rack">
+					</div>
+					<div class="col-md-6 accordion-column">
+						<h2 class="title">FAQs</h2>
+						<div id="accordion">
+							<div class="card open">
+								<a class="accordion-btn" data-bs-toggle="collapse" href="#collapseOne">
+									<div class="card-header">
+										<h3>How does it work?</h3>
+									</div>
+								</a>
+							  <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+								<div class="card-body">
+									<p class="sm">You can place order & rider will come at your doorstep for pickup and drop.</p>
+								</div>
+							  </div>
+							</div>
+
+							 <div class="card">
+								<a class="accordion-btn" data-bs-toggle="collapse" href="#collapsetwo">
+									<div class="card-header">
+										<h3>How many days does it take to process?</h3>
+									</div>
+								</a>
+							  <div id="collapsetwo" class="collapse" data-bs-parent="#accordion">
+								<div class="card-body">
+									<p class="sm">You can place order & rider will come at your doorstep for pickup and drop.</p>
+								</div>
+							  </div>
+							</div>
+
+							 <div class="card">
+								<a class="accordion-btn" data-bs-toggle="collapse" href="#collapseThree">
+								  <div class="card-header">
+									  <h3>Do you have free pick & drop?</h3>
+								  </div>
+								</a>
+							  <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+								<div class="card-body">
+									<p class="sm">You can place order & rider will come at your doorstep for pickup and drop.</p>
+								</div>
+							  </div>
+							</div>
+
+							 <div class="card">
+								<a class="accordion-btn" data-bs-toggle="collapse" href="#collapseFour">
+									<div class="card-header">
+										<h3>Can you deliver in 24 hours?</h3>
+									</div>
+								</a>
+							  <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+								<div class="card-body">
+									<p class="sm">You can place order & rider will come at your doorstep for pickup and drop.</p>
+								</div>
+							  </div>
+							</div>
+
+							 <div class="card">
+								<a class="accordion-btn" data-bs-toggle="collapse" href="#collapseFive">
+								  <div class="card-header">
+									<h3>How clothes are measured?</h3>
+								  </div>
+								</a>
+							  <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+								<div class="card-body">
+									<p class="sm">You can place order & rider will come at your doorstep for pickup and drop.</p>
+								</div>
+							  </div>
+							</div>
+
+						  </div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Blogs -->
+			<div class="blog-section container-fluid mb-100">
+				<div class="row">
+					<h2 class="title">Our Blogs</h2>
+				</div>
+				<div class="row">
+					<!-- Blog Slider Section -->
+					<div class="container-fluid" style=" position: relative;">
+
+						<div style="overflow-x: hidden;">
+							<div class="swiper blogSlider">
+							  <div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<div class="card">
+										<img src="E:\MiraLaundry\media\blog-thumb.png" class="card-img-top" alt="Blog 3">
+										<div class="card-body">
+											<h5 class="card-title semibold">What is Lorem Ipsum?</h5>
+											<p class="card-text sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+											<div class="blog-bottom d-flex align-items-center justify-content-between">
+												<p class="date xsm">Jan 01 2024</p>
+												<a href="/read" class="semibold read-more">Read More<img src="E:\MiraLaundry\media\Vector.png" alt="arrow icon"></a>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="swiper-slide">
+									<div class="card">
+										<img src="E:\MiraLaundry\media\blog-thumb.png" class="card-img-top" alt="Blog 3">
+										<div class="card-body">
+											<h5 class="card-title semibold">What is Lorem Ipsum?</h5>
+											<p class="card-text sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+											<div class="blog-bottom d-flex align-items-center justify-content-between">
+												<p class="date xsm">Jan 01 2024</p>
+												<a href="/read" class="semibold read-more">Read More<img src="E:\MiraLaundry\media\Vector.png" alt="arrow icon"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="card">
+										<img src="E:\MiraLaundry\media\blog-thumb.png" class="card-img-top" alt="Blog 3">
+										<div class="card-body">
+											<h5 class="card-title semibold">What is Lorem Ipsum?</h5>
+											<p class="card-text sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+											<div class="blog-bottom d-flex align-items-center justify-content-between">
+												<p class="date xsm">Jan 01 2024</p>
+												<a href="/read" class="semibold read-more">Read More<img src="E:\MiraLaundry\media\Vector.png" alt="arrow icon"></a>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="swiper-slide">
+									<div class="card">
+										<img src="E:\MiraLaundry\media\blog-thumb.png" class="card-img-top" alt="Blog 3">
+										<div class="card-body">
+											<h5 class="card-title semibold">What is Lorem Ipsum?</h5>
+											<p class="card-text sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+											<div class="blog-bottom d-flex align-items-center justify-content-between">
+												<p class="date xsm">Jan 01 2024</p>
+												<a href="/read" class="semibold read-more">Read More<img src="E:\MiraLaundry\media\Vector.png" alt="arrow icon"></a>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							  <!-- end swiper wrapper-->
+
+							  <!-- If we need navigation buttons -->
+							<!--
+							  <div class="swiper-button-prev"></div>
+							  <div class="swiper-button-next"></div>
+							  -->
+							  <div class="swiper-pagination"></div>
+							</div>
+							<!-- end swiper -->
+						</div>
+					</div>
+					<!-- Pagination dots -->
+
+				</div>
+			</div>
+
+			<!-- Featured -->
+
+			<div class="featured-section container-fluid mb-100">
+				<div class="row">
+					<h2 class="title">As Featured in</h2>
+				</div>
+				<div class="row">
+					<div class="image-slider">
+
+						<div class="col-2 featured-image d-flex align-items-center justify-content-center">
+							<img src="E:\MiraLaundry\media\hindustan.png" alt="Hindustan Times">
+						</div>
+
+						<div class="col-2 featured-image d-flex align-items-center justify-content-center">
+							<img src="E:\MiraLaundry\media\ettect.png" alt="Et Tech">
+						</div>
+
+						<div class="col-2 featured-image d-flex align-items-center justify-content-center">
+							<img src="E:\MiraLaundry\media\yourstory.png" alt="Your Story">
+						</div>
+
+						<div class="col-2 featured-image d-flex align-items-center justify-content-center">
+							<img src="E:\MiraLaundry\media\mid-day.png" alt="Mid Day">
+						</div>
+
+						<div class="col-2 featured-image d-flex align-items-center justify-content-center">
+							<img src="E:\MiraLaundry\media\indian-express.png" alt="Indian Times">
+						</div>
+
+						<div class="col-2 featured-image d-flex align-items-center justify-content-center">
+							<img src="E:\MiraLaundry\media\bw.png" alt="Bw Disrupt">
+						</div>
+
+						<div class="col-2 featured-image d-flex align-items-center justify-content-center">
+							<img src="E:\MiraLaundry\media\hindustan.png" alt="Hindustan Times">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container-fluid serving-areas">
+			<div class="row">
+				<h2 class="title">Serving Areas by Mera Laundry</h2>
+			</div>
+			<div class="container">
+				<div class="row text-center">
+					<p>
+						<a href="/new-delhi">New Delhi</a> |
+						<a href="/noida">Noida</a> |
+						<a href="/gurgaon">Gurgaon</a> |
+						<a href="/ghaziabad">Ghaziabad</a> |
+						<a href="/greater-noida">Greater Noida</a> |
+						<a href="/faridabad">Faridabad</a> |
+						<a href="/ahmedabad">Ahmedabad</a> |
+						<a href="#">Amravati</a> |
+						<a href="#">Azamgarh</a> |
+						<a href="#">Balrampur</a> |
+						<a href="#">Bardoli</a> |
+						<a href="#">Bhubaneswar</a> |
+						<a href="#">Chennai</a> |
+						<a href="#">Chirawa</a> |
+						<a href="#">Chowkham, Arunachal Pradesh</a> |
+						<a href="#">Coimbatore</a> |
+						<a href="#">Cuttack</a> |
+						<a href="#">Goa</a> |
+						<a href="#">Gondia</a> |
+						<a href="#">Gorakhpur</a> |
+						<a href="#">Mysore</a> |
+						<a href="#">Haldwani</a> |
+						<a href="#">Serampore, Hooghly</a> |
+						<a href="#">Chandannagar, Hooghly</a> |
+						<a href="#">Chinsurah, Hooghly</a> |
+						<a href="#">Hyderabad</a> |
+						<a href="#">Jaipur</a> |
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<img src="E:\MiraLaundry\media\mobile-footer.png" alt="black cloth hanger" class="mobile-img">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-4">
+						<h3 class="logo">Mera Laundry</h3>
+						<p class="short-des sm">Trusted laundry and dry cleaning services with convenient pickup and delivery options—experience hassle-free freshness with Mera Laundry.</p>
+					</div>
+
+					<div class="col-lg-1"></div>
+
+					<div class="col-lg-2">
+						<h5 class="nav-title semibold">Userful Links</h5>
+						<ul>
+							<li class="sm">Our Services</li>
+							<li class="sm">Book Now</li>
+							<li class="sm">Join us</li>
+						</ul>
+					</div>
+					<div class="col-lg-2">
+						<h5 class="nav-title semibold">Information</h5>
+						<ul>
+							<li class="sm">Privacy Policy</li>
+							<li class="sm">Terms & Conditions</li>
+							<li class="sm">FAQ's</li>
+							<li class="sm">Blogs</li>
+							<li class="sm">Contact us</li>
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<h5 class="nav-title semibold">Follow us</h5>
+						<ul class="social-media">
+							<li id="fb"><a href="#">
+								<img src="E:\MiraLaundry\media\fb-icon.png" alt="facebook icon">
+							</a></li>
+							<li id="insta"><a href="#">
+								<img src="E:\MiraLaundry\media\Instagram-icon.png" alt="Instagram icon">
+							</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="row footer-copyright">
+					<p class="copyright text-center xsm"> Copyright © 2024 Mera laundry, All Rights Reserved. </p>
+				</div>
+			</div>
+		</footer>
+
+		<!--
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				var myModal = new bootstrap.Modal(document.getElementById('pageLoadModal'));
+				myModal.show();
+			});
+		</script>
+		-->
+
+		<!-- Faq Accordion -->
+		<script>
+			// JavaScript to toggle 'open' class when the accordion item is expanded
+			const accordion = document.getElementById('accordion');
+			accordion.addEventListener('shown.bs.collapse', function (event) {
+				const card = event.target.closest('.card');
+				card.classList.add('open'); // Add 'open' class when the card is expanded
+			});
+
+			accordion.addEventListener('hidden.bs.collapse', function (event) {
+				const card = event.target.closest('.card');
+				card.classList.remove('open'); // Remove 'open' class when the card is collapsed
+			});
+		</script>
+
+		<!-- Blog Carousel -->
+
+		<!-- Include CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<!-- Include jQuery (Slick depends on it) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include Slick Slider JS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!--
+		<script>
+			$(document).ready(function(){
+			  $('.blog-slider').slick({
+				slidesToShow: 3,          // Show 3 items on desktop
+				slidesToScroll: 1,        // Slide 1 item at a time
+				infinite: true,           // Infinite looping of slides
+				dots: true,               // Enable dots for navigation
+				autoplay: true,
+				autoplaySpeed: 2000,
+				speed: 600,
+				responsive: [
+				  {
+					breakpoint: 768,      // When screen width is less than 768px
+					settings: {
+					  slidesToShow: 1.5,    // Show 1 item on mobile
+					  slidesToScroll: 1   // Slide 1 item at a time on mobile
+					}
+				  }
+				]
+			  });
+			});
+			</script>
+
+		-->
+
+<!-- Testimonial Slider -->
+
+<script>
+	$(document).ready(function(){
+	  $('.testimonial-slider').slick({
+		slidesToShow: 3,          // Show 3 items on desktop
+		slidesToScroll: 1,        // Slide 1 item at a time
+		infinite: true,           // Infinite looping of slides
+		dots: true,
+		autoplay: false,
+		autoplaySpeed: 2000,
+		speed: 600,            // Enable dots for navigation
+		responsive: [
+		  {
+
+			breakpoint: 768,      // When screen width is less than 768px
+			settings: {
+			  slidesToShow: 1,    // Show 1 item on mobile
+			  slidesToScroll: 1   // Slide 1 item at a time on mobile
+			},
+		  }
+		]
+	  });
+	});
+	</script>
+
+<!-- As Featured in SLider -->
+
+<script>
+	$(document).ready(function(){
+	  $('.image-slider').slick({
+		slidesToShow: 6,          // Show 3 items on desktop
+		slidesToScroll: 1,        // Slide 1 item at a time
+		infinite: true,           // Infinite looping of slides
+		dots: false,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		speed: 600,            // Enable dots for navigation
+		responsive: [
+		  {
+			breakpoint: 1025,      // When screen width is less than 768px
+			settings: {
+			  slidesToShow: 3,    // Show 1 item on mobile
+			  slidesToScroll: 1   // Slide 1 item at a time on mobile
+			},
+			breakpoint: 768,      // When screen width is less than 768px
+			settings: {
+			  slidesToShow: 1.5,    // Show 1 item on mobile
+			  slidesToScroll: 1   // Slide 1 item at a time on mobile
+			},
+
+		  }
+		]
+	  });
+	});
+	</script>
+
+
+<!-- Coupon Sldier -->
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	  <!-- Initialize Swiper -->
+	  <script>
+		var swiper = new Swiper(".mySwiper", {
+		  slidesPerView: 1.5,
+		  slidesPerGroup: 1,
+		  centeredSlides: false,
+		  loop: true,
+		  slideToClickedSlide: true,
+		  spaceBetween: 16,
+		  pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		  },
+			// Navigation arrows
+	  navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	  },
+		});
+	  </script>
+
+
+
+<!-- Blog Slider-->
+
+<script>
+	var swiper = new Swiper(".blogSlider", {
+	  slidesPerView: 1.5,
+	  spaceBetween: 16,
+	  slidesPerGroup: 1,
+	  centeredSlides: false,
+	  loop: true,
+	  slideToClickedSlide: true,
+	  pagination: {
+		el: ".swiper-pagination",
+		clickable: true, // Enable clicking on dots
+	  },
+	  navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	  },
+	  breakpoints: {
+		// When the window width is less than or equal to 768px (Mobile)
+		768: {
+		  slidesPerView: 2,  // Show 1.5 slides at a time on mobile
+		  spaceBetween: 16,    // Adjust space between slides on mobile for better fit
+		  centeredSlides: true, // Center the slides for better visibility of the second slide
+		},
+		// When the window width is greater than 768px (Desktop)
+		1024: {
+		  slidesPerView: 3,  // Show three slides on desktop
+		  spaceBetween: 30,   // Maintain the space between slides
+		},
+	  },
+	});
+  </script>
+
+
+
+	<!-- Copy text -->
+	<script>
+		function copyText(button) {
+			// Get the text from the button
+			var text = button.innerText;
+
+			// Create the tooltip element
+			var tooltip = document.createElement('span');
+			tooltip.classList.add('tooltip');
+			tooltip.innerText = 'Copied';
+
+			// Append the tooltip above the button
+			button.parentElement.appendChild(tooltip);
+
+			// Use the Clipboard API to copy the text
+			navigator.clipboard.writeText(text).then(function() {
+				// Change button text to "Copied"
+				// button.innerText = "Copied"; //
+
+				// Revert text back to the original after 2 seconds
+
+				setTimeout(function() {
+				//	button.innerText = text; //
+					// Remove the tooltip after 2 seconds
+					tooltip.remove();
+				}, 3000);
+			}).catch(function(error) {
+				console.error("Error copying text: ", error);
+			});
+		}
+	</script>
+
+
+
+	</body>
+</html>
