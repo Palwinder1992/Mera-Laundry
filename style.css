@@ -94,7 +94,7 @@ p {
 }
 
 .modal-content::before {
-    content: url(/media/Polygon.png);
+    content: url(media/Polygon.png);
     position: absolute;
     top: -17px;
     z-index: 1;
@@ -221,7 +221,7 @@ a.btn.book-btn {
 /* Home page First Section */
 
 .banner {
-    background: url(/media/Mask-group.jpg);
+    background: url(media/Mask-group.jpg);
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -231,7 +231,7 @@ a.btn.book-btn {
 /* Home page three Banner Section */
 
 .banner-1 {
-    background: url(/media/Maskgroup.png);
+    background: url(media/Maskgroup.png);
     background-size: cover;
     background-position: center;
     height: 204px;
@@ -239,7 +239,7 @@ a.btn.book-btn {
 }
 
 .banner-2 {
-    background: url(/media/Maskgroup-1.png);
+    background: url(media/Maskgroup-1.png);
     background-size: cover;
     background-position: center;
     height: 204px;
@@ -247,7 +247,7 @@ a.btn.book-btn {
 }
 
 .banner-3 {
-    background: url(/media/Maskgroup-2.png);
+    background: url(media/Maskgroup-2.png);
     background-size: cover;
     background-position: center;
     height: 204px;
@@ -332,7 +332,7 @@ li.nav-item {
 }
 
 .how-it-works .left-col{
-    background: url(/media/Maskgroup-3.png);
+    background: url(media/Maskgroup-3.png);
     background-size: cover;
     background-position: center;
     border-top-left-radius: 10px;
@@ -633,7 +633,7 @@ button.copy-code {
 }
 
 .schedule-pickup .image-col {
-    background: url(/media/clothing.gif);
+    background: url(media/clothing.gif);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -2404,14 +2404,14 @@ a.orange-btn:hover {
     }
 
     .benefits-sec:before {
-        content: url(/media/clean.png);
+        content: url(media/clean.png);
         position: absolute;
         bottom: 8px;
         left: 6px;
     }
 
     .benefits-sec:after {
-        content: url(/media/clean.png);
+        content: url(media/clean.png);
         position: absolute;
         top: 8px;
         right: 6px;
