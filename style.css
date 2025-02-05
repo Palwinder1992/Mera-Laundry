@@ -1042,8 +1042,8 @@ button.copy-code {
 
 .client-reviews li.slick-active button:before,
 .blog-slider li.slick-active button:before {
-    background: var(--orange) !important;
-    color: var(--orange) !important;
+    background: transparent !important;
+    color: transparent !important;
 }
 
 .client-reviews .slick-dots li button,
@@ -1067,10 +1067,10 @@ button.copy-code {
 
 .client-reviews .slick-dots li button:before,
 .blog-slider .slick-dots li button:before {
-    color: #fff;
+    color: transparent !important;
     opacity: 1 !important;
     border-radius: 50%;
-    background: #fff;
+    background: transparent !important;
     width: 0px !important;
     height: 0px !important;
     padding: 0;
