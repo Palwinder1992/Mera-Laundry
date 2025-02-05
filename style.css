@@ -1314,6 +1314,28 @@ input[type="checkbox"]:checked::after {
 
 /** Checkbox **/
 
+
+/** Schedule Page **/
+
+.schedule-main label {
+    width: 100%;
+}
+.schedule-main label {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+
+.schedule-main input {
+    margin-top: 6px;
+}
+
+
+/** End of Schedule Page **/
+
 /** Footer **/
 
 footer>.container-fluid {
