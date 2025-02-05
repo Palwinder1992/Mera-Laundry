@@ -1038,6 +1038,7 @@ button.copy-code {
 .blog-slider .slick-dots li button {
     width: 10px;
     height: 10px;
+    padding: 0;
 }
 
 .client-reviews li.slick-active button:before,
@@ -1054,7 +1055,6 @@ button.copy-code {
     border-radius: 50%;
     width: 10px;
     height: 10px;
-
 }
 
 .blog-slider ul.slick-dots {
