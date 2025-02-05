@@ -106,33 +106,72 @@
                 <div class="row">
                     <form action="/action_page.php">
 
-                        <label> Name 
-                            <input type="text" name="name" placeholder="Name" class="form-control" id="name">
-                        </label>
+                        <div class="col-12 col-md-6">
+                            <label> Name 
+                                <input type="text" name="name" placeholder="Name" class="form-control" id="name">
+                            </label>
+                        </div>
 
-                        <label> Mobile 
-                            <input type="tel" name="mobile" placeholder="+91" class="form-control" id="mobile-number">
-                        </label>
+                        <div class="col-12 col-md-6">
+                            <label> Mobile 
+                                <input type="tel" name="mobile" placeholder="+91" class="form-control" id="mobile-number">
+                            </label>
+                        </div>
 
-                        <label>Pickup Date
-                            <input type="date" id="date" placeholder="dd-mm-yy" class="form-control" id="date">
-                        </label>
+                        <div class="col-12 col-md-6">
+                            <label>Pickup Date
+                                <input type="date" id="date" placeholder="dd-mm-yy" class="form-control" id="date">
+                            </label>
+                        </div>
 
-                        <label>Pickup Time
-                            <input type="time" name="time" placeholder="Select" class="form-control" id="time">
-                        </label>
+                        <div class="col-12 col-md-6">
+                            <label>Pickup Time
+                                <input type="time" name="time" placeholder="Select" class="form-control" id="time">
+                            </label>
+                        </div>
 
-                        <label> Address
-                            <input type="text" name="address" placeholder="Enter Address" class="form-control" id="address">
-                        </label>
+                        <div class="col-12 col-md-6">
+                            <label> Address
+                                <input type="text" name="address" placeholder="Enter Address" class="form-control" id="address">
+                            </label>
+                        </div>
 
-                        <label> Coupon
-                            <input type="text" name="coupon" placeholder="Coupon Code" class="form-control" id="coupon">
-                        </label>
+                        <div class="col-12 col-md-6">
+                            <label> Coupon
+                                <input type="text" name="coupon" placeholder="Coupon Code" class="form-control" id="coupon">
+                            </label>
+                        </div>
 
                         <input type="submit" id="submit">
 
                     </form>
+                </div>
+
+                <div class="row">
+
+                    <h2> Order Summary </h2>
+
+                    <div class="row">
+
+                        <div class="col-12 col-md-6">
+                            <div class="row">
+                                <div class="col-6">Service</div>
+                                <div class="col-6" id="choosen-service">Dry Cleaning</div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="row">
+                                <div class="col-6"> <img src="media/truck.png"> Standard delivery</div>
+                                <div class="col-6" id="coupon-dis-value">48 to 72 hours</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6"> <img src="media/truck.png"> Express delivery</div>
+                                <div class="col-6" id="coupon-dis-value"> 24 hours </div>
+                            </div>
+                        </div>
+                    </div>  
+
                 </div>
             </div>
 
