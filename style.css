@@ -1122,6 +1122,10 @@ button.copy-code {
     text-align: left !important;
 }
 
+.services-section h2.text-left.title {
+    margin: 0;
+}
+
 button#selectedArea {
     background: var(--light-blue);
     border: none;
