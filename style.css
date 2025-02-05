@@ -48,6 +48,18 @@ p {
 
 /** Desktop **/
 
+.need-help-btn a {
+    position: fixed;
+    background: var(--orange);
+    right: 50px;
+    top: 50%;
+    font-family: 'Inter';
+    color: #fff;
+    border-radius: 30px;
+    padding: 12px 12.5px;
+    font-size: 16px;
+}
+
 @media only screen and (min-width: 1025px) {
 
     .mb-100 {
