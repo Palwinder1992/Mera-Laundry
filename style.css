@@ -1338,6 +1338,16 @@ input[type="checkbox"]:checked::after {
     padding: 48px 55px 52px;
     border-radius: 30px;
     border: 1px solid rgb(0 0 0 / 5%);
+    box-shadow: 0px 0px 10px 0px #e6891145;
+}
+
+.schedule-main .client-reviews {
+    margin-top: 112px;
+}
+.schedule-main h1.title.text-center {
+    font-size: 32px;
+    line-height: 24px;
+    margin-bottom: 38px;
 }
 
 
