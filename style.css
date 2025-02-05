@@ -1917,8 +1917,13 @@ a.orange-btn:hover {
         justify-content: space-between !important;
     }
 
-    .services-section>.row {
+    .services-section>.row:first-child {
+        margin-top: 21px;
         margin-bottom: 16px;
+    }
+
+    .container-fluid.services-section {
+        margin-bottom: 34px;
     }
 
     .scrolling-row .col-3 {
@@ -1935,6 +1940,16 @@ a.orange-btn:hover {
     .scrolling-row {
         -ms-overflow-style: none;  /* For Internet Explorer */
         scrollbar-width: none;  /* For Firefox */
+    }
+
+    .dry-cleaning-prices ul#myTab {
+        margin-bottom: 22px;
+    }
+
+    .dry-cleaning-prices h3.title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 17px;
     }
 
     .dry-cleaning-prices .container-fluid {
@@ -1960,6 +1975,10 @@ a.orange-btn:hover {
         height: 73px;
     }
 
+    .service-main .container.mb-100.mobile-coupon.mb-100 {
+        padding: 0;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -1977,6 +1996,7 @@ a.orange-btn:hover {
     }
 
   .services-section>.row {
+    margin-top: 48px;
     margin-bottom: 21px;
 }
 
