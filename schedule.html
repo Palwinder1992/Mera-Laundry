@@ -1,0 +1,696 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+
+    <body>
+        <header>
+			<div class="container-fluid">
+				<div class="row d-flex align-items-center">
+					<div class="col-md-12 col-lg-5 header-left">
+						<ul class="d-flex align-items-center">
+							<li>
+								<a class="logo" href="index.html">MERA LAUNDRY</a>
+							</li>
+							<li>
+								<div class="location d-flex align-items-center" id="select-city">
+									<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.8304 1.11523C6.23672 1.11523 3.31299 4.03897 3.31299 7.63264C3.31299 12.1495 9.83681 19.8652 9.83681 19.8652C9.83681 19.8652 16.3478 11.9274 16.3478 7.63264C16.3478 4.03897 13.4242 1.11523 9.8304 1.11523ZM11.7968 9.54095C11.2546 10.0831 10.5426 10.3542 9.8304 10.3542C9.11835 10.3542 8.40607 10.0831 7.86407 9.54095C6.77975 8.45673 6.77975 6.69251 7.86407 5.60818C8.38913 5.0829 9.08756 4.79359 9.8304 4.79359C10.5732 4.79359 11.2716 5.08302 11.7968 5.60818C12.8812 6.69251 12.8812 8.45673 11.7968 9.54095Z" fill="#E68911"/>
+									</svg>
+									<span class="selected-city">New Delhi <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+								</div>
+							</li>
+
+
+					</div>
+					<div class="col-md-7">
+						<ul class="header-right-links d-flex float-md-end align-items-center">
+							<li>
+								<a href="#" data-toggle="modal" data-target="#login" data-t="0" class="submit cls-type">Login</a>
+							</li>
+							<li>
+								<a href="#" data-toggle="modal" data-target="#query" data-t="0" class="submit cls-type bp">Join Us</a>
+							</li>
+
+							<li>
+								<a href="service.html" class="btn book-btn">Book Now</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</header>
+
+		<div class="mobile-menu box-shadow">
+			<div class="mobile-navbar fixed_nav">
+				<ul class="d-flex align-items-end justify-content-between text-center">
+					<li>
+						<a href="/index.html" class="text-center xsm">
+							<img src="media\Home.png" alt="Home icon">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="/my-orders.html" class="text-center xsm">
+							<img src="media\Sent.png" alt="box icon">
+							My Orders
+						</a>
+					</li>
+					<li>
+						<a href="service.html" class="text-center xsm book-now-text">
+							<p class="book-now-icon">
+								<span class="plus-icon-circle">+ </span></p>
+								 Book Now
+						</a>
+					</li>
+					<li>
+						<a href="/join-us.html" class="text-center xsm">
+							<img src="media\Respect.png" alt="Joint Hands icon">
+							Join us
+						</a>
+					</li>
+					<li>
+						<a href="/support.html" class="text-center xsm">
+							<img src="media\Help.png" alt="chat bubble icon">
+							Support
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="modal fade select-city-popup" id="pageLoadModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header flex-column">
+						<h2 class="mobile-logo">Mera Laundry</h2>
+						<h1>Pick a City</h1>
+						<p class="sm">To find awesome offers around you</p>
+					</div>
+					<div class="modal-body">
+						<div class="row d-flex justify-content-center">
+							<div class="city-with-icon center p-3 city-selection" id="citySelection">
+								<a href="javascript:void()" >
+									<img src="media\icons\bangalore.png" alt="city icon">
+									<p>Bangalore</p>
+								</a>
+							</div>
+							<div class="city-with-icon center p-3">
+								<a href="javascript:void()" >
+									<img src="media\icons\chennai 1.png" alt="city icon">
+									<p>Chennai</p>
+								</a>
+
+							</div>
+							<div class="city-with-icon center p-3">
+								<a href="javascript:void()">
+									<img src="media\icons\delhi.png" alt="city icon">
+									<p>New Delhi</p>
+								</a>
+							</div>
+							<div class="city-with-icon center p-3">
+								<a href="javascript:void()">
+									<img src="media\icons\ghaziabad.png" alt="city icon">
+									<p>Ghaziabad</p>
+								</a>
+
+							</div>
+							<div class="city-with-icon center p-3">
+								<a href="javascript:void()">
+									<img src="media\icons\ghaziabad.png" alt="city icon">
+									<p>Gurgaon</p>
+								</a>
+							</div>
+							<div class="city-with-icon center p-3">
+								<a href="javascript:void()" >
+									<img src="media\icons\hyderabad-charminar 1.png" alt="city icon">
+									<p>Hyderabad</p>
+								</a>
+
+							</div>
+							<div class="city-with-icon center p-3">
+								<a href="javascript:void()">
+									<img src="media\icons\bangalore.png" alt="city icon">
+									<p>Indore</p>
+								</a>
+
+							</div>
+
+							<div class="city-with-icon center p-3">
+								<a href="javascript:void()i">
+									<img src="media\icons\bangalore.png" alt="city icon">
+									<p>Mumbai</p>
+								</a>
+							</div>
+							<div class="city-with-icon center p-3">
+								<a href="javascript:void()">
+									<img src="media\icons\bangalore.png" alt="city icon">
+									<p>Nvi Mumbai</p>
+								</a>
+							</div>
+							<div class="city-with-icon center p-3">
+								<a href="javascript:void()">
+									<img src="media\icons\bangalore.png" alt="city icon">
+									<p>Noida</p>
+								</a>
+							</div>
+							<div class="city-with-icon center p-3">
+								<a href="javascript:void()">
+									<img src="media\icons\bangalore.png" alt="city icon">
+									<p>Pune</p>
+								</a>
+							</div>
+							<div class="city-with-icon center p-3">
+								<a href="javascript:void()">
+									<img src="media\icons\bangalore.png" alt="city icon">
+									<p>Raipur</p>
+								</a>
+							</div>
+							<div class="city-with-icon center p-3">
+								<a href="javascript:void()">
+									<img src="media\icons\bangalore.png" alt="city icon">
+									<p>Surat</p>
+								</a>
+							</div>
+							<div class="city-with-icon center p-3">
+								<a href="javascript:void()">
+									<img src="media\icons\bangalore.png" alt="city icon">
+									<p>Thane</p>
+								</a>
+							</div>
+						</div>
+
+						</div>
+					</div>
+					<!--
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					</div>
+				-->
+				</div>
+		</div>
+
+		<div class="modal fade select-area-popup" id="select-area-popup" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-body">
+						<div class="row d-flex justify-content-center">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							<input type="text" id="citySearch" placeholder="Search location" class="search-bar">
+							<ul id="cityList" class="list-unstyled">
+								<li class="area center" id="citySelection">
+									<a href="javascript:void()">
+										<p>Mansarovar Garden</p>
+									</a>
+								</li>
+								<li class="area">
+									<a href="javascript:void()">
+										<p>Aashirwaad Chowk</p>
+									</a>
+								</li>
+								<li class="area">
+									<a href="javascript:void()">
+										<p>Abul Fazal Enclave</p>
+									</a>
+								</li>
+								<li class="area">
+									<a href="javascript:void()">
+										<p>Adchini</p>
+									</a>
+								</li>
+								<li class="area">
+									<a href="javascript:void()l">
+										<p>Amar Colony</p>
+									</a>
+								</li>
+								<li class="area">
+									<a href="javascript:void()l">
+										<p>Anand Vihar</p>
+									</a>
+								</li>
+								<li class="area">
+									<a href="javascript:void()">
+										<p>Badarpur</p>
+									</a>
+								</li>
+								<li class="area">
+									<a href="javascript:void()">
+										<p>Baljeet Nagar</p>
+									</a>
+								</li>
+								<li class="area">
+									<a href="javascript:void()">
+										<p>Nvi Mumbai</p>
+									</a>
+								</li>
+								<li class="area">
+									<a href="javascript:void()">
+										<p>Noida</p>
+									</a>
+								</li>
+								<li class="area">
+									<a href="javascript:void()">
+										<p>Pune</p>
+									</a>
+								</li>
+								<li class="area">
+									<a href="javascript:void()">
+										<p>Raipur</p>
+									</a>
+								</li>
+								<li class="area">
+									<a href="javascript:void()">
+										<p>Surat</p>
+									</a>
+								</li>
+								<li class="area">
+									<a href="javascript:void()">
+										<p>Thane</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+        <div class="main schedule-main">
+
+            <div class="container-fluid d-flex justify-content-center flex-column align-items-center">
+
+                <div class="row">
+                    <h1 class="title text-center semibold">Schedule Now</h1>
+                </div>
+
+                <div class="row booking-form">
+                    <form action="/action_page.php">
+                        <div class="row d-flex justify-content-between m-0">
+
+                            <div class="col-12 col-md-6 p-0">
+                                <label> Name
+                                    <input type="text" name="name" placeholder="Name" class="form-control orange-btn" id="name" required>
+                                </label>
+                            </div>
+
+                            <div class="col-12 col-md-6 p-0">
+                                <label> Mobile
+                                    <input type="tel" name="mobile" placeholder="+91" class="form-control" id="mobile-number" required>
+                                </label>
+                            </div>
+
+                            <div class="col-12 col-md-6 p-0">
+                                <label>Pickup Date
+                                    <input type="date" id="date" placeholder="dd-mm-yy" class="form-control" id="date" required>
+                                </label>
+                            </div>
+
+                            <div class="col-12 col-md-6 p-0">
+                                <label>Pickup Time
+                                    <input type="time" name="time" placeholder="Select" class="form-control" id="time" required>
+                                </label>
+                            </div>
+
+                            <div class="col-12 col-md-6 p-0">
+                                <label> Address
+                                    <input type="text" name="address" placeholder="Enter Address" class="form-control" id="address" required>
+                                </label>
+                            </div>
+
+                            <div class="col-12 col-md-6 p-0">
+
+								<label for="couponCode" class="coupon-code-label">Coupon
+    								<input type="text" id="couponCode" name="couponCode" placeholder="Coupon Code">
+    								<button type="button" class="orange-btn coupon-btn">Apply</button>
+								</label>
+                            </div>
+
+							<hr>
+
+                            <div class="row m-0 p-0">
+								<h3 class="title text-left desktop"> Order Summary </h3>
+
+
+                                <div class="container">
+									<div class="row order-summary d-flex justify-content-between">
+
+										<div class="col-12 col-md-6 p-0">
+											<h3 class="title text-left mobile"> Order Summary </h3>
+											<div class="blue-bg">
+											<div class="row">
+												<div class="col-7"><p class="semibold">Service</p></div>
+												<div class="col-5" id="choosen-service"><p class="sm">Dry Cleaning</p></div>
+											</div>
+
+											<hr>
+
+											<div class="row">
+												<div class="col-7"><p class="sm">Coupon Discount</p></div>
+												<div class="col-5" id="choosen-service"><p class="sm">-</p></div>
+											</div>
+											</div>
+										</div>
+
+										<div class="col-12 col-md-6 white-bg">
+
+											<div class="row">
+												<div class="col-7">
+													<p class="semibold"> <img src="media/truck.png"> Standard delivery </p>
+												</div>
+
+												<div class="col-5" id="coupon-dis-value">
+													<p class="sm">48 to 72 hours</p>
+												</div>
+											</div>
+
+											<hr>
+
+											<div class="row">
+												<div class="col-7">
+													<p class="semibold"> <img src="media/truck.png"> Express delivery </p></div>
+												<div class="col-5" id="coupon-dis-value">
+													<p class="sm"> 24 hours </p> </div>
+											</div>
+										</div>
+									</div>
+								</div>
+                                </div>
+
+                            </div>
+
+                            <input type="submit" id="submit" name="place-order" value="Place Order">
+
+
+                        </div>
+
+                    </form>
+                </div>
+
+
+
+        <!-- Testimonials -->
+
+			 <div class="client-reviews container-fluid mb-100">
+				<div class="row d-flex align-items-center justify-content-between align-items-center">
+					<div class="col-12 col-md-6 col-lg-6">
+						<h2 class="title">What Our Customers Say</h2>
+					</div>
+					<div class="googleIcon-with-text col-12 col-md-6 col-lg-6 d-flex justify-content-end align-items-center">
+						<div class="google-img">
+							<img src="media\Google.png" alt="Google Logo">
+						</div>
+						<div class="rating-text">
+							<h6>Google Rating</h6>
+							<p class="bold">4.5/5 <img src="media\stars.png" alt="golden stars"></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slider -->
+
+				<div class="row">
+					<!-- Slider Section -->
+					<div class="container-fluid padding-none">
+
+						<div class="testimonial-slider">
+							<div class="testimonial">
+								<div class="d-flex align-items-center">
+									<img src="media\Ellipse1.png" alt="five stars">
+									<div class="person-info">
+										<p class="name semibold">Neha Verma</p>
+										<p class="time">1 month ago</p>
+									</div>
+								</div>
+								<img src="media\Frame-80.png" class="five-stars" alt="stars">
+								<p class="review sm">Exceptional service and quality! Mera Laundry made my life so much easier with their easy pickup and delivery. </p>
+							</div>
+
+							<div class="testimonial">
+								<div class="d-flex align-items-center">
+									<img src="media\Ellipse1.png" alt="five stars">
+									<div class="person-info">
+										<p class="name semibold">Neha Verma</p>
+										<p class="time">1 month ago</p>
+									</div>
+								</div>
+								<img src="media\Frame-80.png" class="five-stars" alt="stars">
+								<p class="review sm">Exceptional service and quality! Mera Laundry made my life so much easier with their easy pickup and delivery. </p>
+							</div>
+
+							<div class="testimonial">
+								<div class="d-flex align-items-center">
+									<img src="media\Ellipse1.png" alt="five stars">
+									<div class="person-info">
+										<p class="name semibold">Neha Verma</p>
+										<p class="time">1 month ago</p>
+									</div>
+								</div>
+								<img src="media\Frame-80.png" class="five-stars" alt="stars">
+								<p class="review sm">Exceptional service and quality! Mera Laundry made my life so much easier with their easy pickup and delivery. </p>
+							</div>
+
+							<div class="testimonial">
+								<div class="d-flex align-items-center">
+									<img src="media\Ellipse1.png" alt="five stars">
+									<div class="person-info">
+										<p class="name semibold">Neha Verma</p>
+										<p class="time">1 month ago</p>
+									</div>
+								</div>
+								<img src="media\Frame-80.png" class="five-stars" alt="stars">
+								<p class="review sm">Exceptional service and quality! Mera Laundry made my life so much easier with their easy pickup and delivery. </p>
+							</div>
+
+							<div class="testimonial">
+								<div class="d-flex align-items-center">
+									<img src="media\Ellipse1.png" alt="five stars">
+									<div class="person-info">
+										<p class="name semibold">Neha Verma</p>
+										<p class="time">1 month ago</p>
+									</div>
+								</div>
+								<img src="media\Frame-80.png" class="five-stars" alt="stars">
+								<p class="review sm">Exceptional service and quality! Mera Laundry made my life so much easier with their easy pickup and delivery. </p>
+							</div>
+
+							<div class="testimonial">
+								<div class="d-flex align-items-center">
+									<img src="media\Ellipse1.png" alt="five stars">
+									<div class="person-info">
+										<p class="name semibold">Neha Verma</p>
+										<p class="time">1 month ago</p>
+									</div>
+								</div>
+								<img src="media\Frame-80.png" class="five-stars" alt="stars">
+								<p class="review sm">Exceptional service and quality! Mera Laundry made my life so much easier with their easy pickup and delivery. </p>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			 </div>
+        </div>
+
+        <div class="container-fluid serving-areas">
+			<div class="row">
+				<h2 class="title">Serving Areas by Mera Laundry</h2>
+			</div>
+			<div class="container">
+				<div class="row text-center">
+					<p>
+						<a href="/new-delhi">New Delhi</a> |
+						<a href="/noida">Noida</a> |
+						<a href="/gurgaon">Gurgaon</a> |
+						<a href="/ghaziabad">Ghaziabad</a> |
+						<a href="/greater-noida">Greater Noida</a> |
+						<a href="/faridabad">Faridabad</a> |
+						<a href="/ahmedabad">Ahmedabad</a> |
+						<a href="#">Amravati</a> |
+						<a href="#">Azamgarh</a> |
+						<a href="#">Balrampur</a> |
+						<a href="#">Bardoli</a> |
+						<a href="#">Bhubaneswar</a> |
+						<a href="#">Chennai</a> |
+						<a href="#">Chirawa</a> |
+						<a href="#">Chowkham, Arunachal Pradesh</a> |
+						<a href="#">Coimbatore</a> |
+						<a href="#">Cuttack</a> |
+						<a href="#">Goa</a> |
+						<a href="#">Gondia</a> |
+						<a href="#">Gorakhpur</a> |
+						<a href="#">Mysore</a> |
+						<a href="#">Haldwani</a> |
+						<a href="#">Serampore, Hooghly</a> |
+						<a href="#">Chandannagar, Hooghly</a> |
+						<a href="#">Chinsurah, Hooghly</a> |
+						<a href="#">Hyderabad</a> |
+						<a href="#">Jaipur</a> |
+					</p>
+				</div>
+			</div>
+		</div>
+
+    <!-- Footer -->
+
+		<footer>
+			<img src="media\mobile-footer.png" alt="black cloth hanger" class="mobile-img">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-4">
+						<h3 class="logo">Mera Laundry</h3>
+						<p class="short-des sm">Trusted laundry and dry cleaning services with convenient pickup and delivery options—experience hassle-free freshness with Mera Laundry.</p>
+					</div>
+
+					<div class="col-lg-1"></div>
+
+					<div class="col-lg-2">
+						<h5 class="nav-title semibold">Userful Links</h5>
+						<ul>
+							<li class="sm">Our Services</li>
+							<li class="sm"><a href="service.html">Book Now</a></li>
+							<li class="sm">Join us</li>
+						</ul>
+					</div>
+					<div class="col-lg-2">
+						<h5 class="nav-title semibold">Information</h5>
+						<ul>
+							<li class="sm">Privacy Policy</li>
+							<li class="sm">Terms & Conditions</li>
+							<li class="sm">FAQ's</li>
+							<li class="sm">Blogs</li>
+							<li class="sm">Contact us</li>
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<h5 class="nav-title semibold">Follow us</h5>
+						<ul class="social-media">
+							<li id="fb"><a href="#">
+								<img src="media\fb-icon.png" alt="facebook icon">
+							</a></li>
+							<li id="insta"><a href="#">
+								<img src="media\Instagram-icon.png" alt="Instagram icon">
+							</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="row footer-copyright">
+					<p class="copyright text-center xsm"> Copyright © 2024 Mera laundry, All Rights Reserved. </p>
+				</div>
+			</div>
+		</footer>
+
+
+		<!-- City Popup -->
+
+		<script>
+            document.addEventListener("DOMContentLoaded", function () {
+
+                var myModal = new bootstrap.Modal(document.getElementById('pageLoadModal'));
+
+                // Event listener for the city selection links
+                var cityLinks = document.querySelectorAll('.city-select');
+                cityLinks.forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        myModal.show(); // Open the modal when a city link is clicked
+                    });
+                });
+
+                // Event listener for the first element (div with id 'select-city-div')
+                document.getElementById('select-city').addEventListener('click', function() {
+                    myModal.show(); // Open the modal when the 'select-city' div is clicked
+                });
+
+            });
+        </script>
+
+		<!-- Area Popup -->
+
+		<script>
+			document.getElementById('book-now').addEventListener('click', function() {
+				var myModal = new bootstrap.Modal(document.getElementById('select-area-popup'));
+				myModal.show();
+				});
+
+		</script>
+
+<!-- Search field in area popup -->
+
+		<script>
+			document.getElementById("citySearch").addEventListener("keyup", function() {
+				var input = document.getElementById("citySearch").value.toLowerCase();
+				var areas = document.querySelectorAll("#cityList .area, #cityList .city-with-icon");
+
+				areas.forEach(function(area) {
+					var areaName = area.querySelector("p").textContent.toLowerCase();
+					if (areaName.includes(input)) {
+						area.style.display = "block";
+					} else {
+						area.style.display = "none";
+					}
+				});
+			});
+
+		</script>
+
+        <!-- Include CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+        <!-- Include jQuery (Slick depends on it) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Include Slick Slider JS -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- Testimonial Slider -->
+
+        <script>
+            $(document).ready(function(){
+            $('.testimonial-slider').slick({
+                slidesToShow: 3,          // Show 3 items on desktop
+                slidesToScroll: 1,        // Slide 1 item at a time
+                infinite: true,           // Infinite looping of slides
+                dots: true,
+                autoplay: false,
+                autoplaySpeed: 2000,
+                speed: 600,            // Enable dots for navigation
+                responsive: [
+                {
+
+                    breakpoint: 768,      // When screen width is less than 768px
+                    settings: {
+                    slidesToShow: 1,    // Show 1 item on mobile
+                    slidesToScroll: 1   // Slide 1 item at a time on mobile
+                    },
+                }
+                ]
+            });
+            });
+        </script>
+
+    </body>
+</html>
